@@ -1,0 +1,189 @@
+.hero-container.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container .card {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.hero-container {
+  background: #C4ECF0;
+  color: #E8F3F5;
+}
+
+.card-container {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 15px;
+}
+
+.card-container .card {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 35px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #444;
+  cursor: pointer;
+  margin: 0px 25px;
+  display: inline-block;
+}
+
+.card-container .card.selected {
+  opacity: .5;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  background: #444;
+  color: white;
+}
+
+.card-container .card.selected:hover {
+  opacity: .5;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  background: #444;
+  color: white;
+}
+
+.card-container .card:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.card-container .card.taken {
+  background: rgba(241, 133, 149, 0.8);
+  color: white;
+}
+
+.card-container .card.taken:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  background: #f18595;
+}
+
+.btn {
+  font-size: 1em;
+  padding: 7px 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  background-color: #E8F3F5;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: #F18595;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.btn.outline {
+  color: #E8F3F5;
+  background: none;
+  border-color: #E8F3F5;
+}
+
+.btn.outline:hover {
+  color: #F18595;
+  background: #E8F3F5;
+  border-color: transparent;
+}
+
+.btn:hover {
+  color: #E8F3F5;
+  background: none;
+  border-color: #E8F3F5;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  background: #E8F3F5;
+  color: #F18595;
+  border-color: transparent;
+}
+
+input[type="checkbox"]:disabled + label,
+input[type="radio"]:disabled + label {
+  cursor: not-allowed;
+  opacity: .3;
+  background: #E8F3F5;
+  color: #F18595;
+  border-color: transparent;
+}
+
+.bottom-container {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px;
+  background: #F18595;
+}
+
+.bottom-container .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: white;
+}
+
+.bottom-container .bottom-title {
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.bottom-container form {
+  position: relative;
+}
+
+.bottom-container form #fascie-orarie {
+  width: 450px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bottom-container form #fascie-orarie .btn.fascia-oraria {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.bottom-container form input[type="submit"] {
+  display: block;
+  margin: 25px auto;
+}
+/*# sourceMappingURL=prenota.css.map */

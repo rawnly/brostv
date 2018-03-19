@@ -1,0 +1,249 @@
+.hero-container.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #444;
+  background: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(241, 133, 149, 0.5);
+          text-decoration-color: rgba(241, 133, 149, 0.5);
+  letter-spacing: 1px;
+  font-size: 1em;
+  color: #F18595;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+a:hover {
+  color: #ec576d;
+}
+
+.hero-container {
+  width: 100vw;
+  height: 100vh;
+  background: none;
+  padding: 35px;
+}
+
+.hero-container.main {
+  background: url("/assets/bg-1.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.hero-container.welcome-screen:first-of-type {
+  background: url("/assets/bg-4.jpg") #C4ECF0 center no-repeat;
+  background-size: cover;
+}
+
+.hero-container.welcome-screen:not(:first-of-type) {
+  background: #C4ECF0;
+}
+
+.hero-form {
+  padding: 35px;
+  border-radius: 10px;
+  width: 80vw;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.5);
+  color: #444;
+  position: relative;
+}
+
+.hero-form .form-group {
+  margin: 25px auto;
+}
+
+.hero-form .form-group:last-of-type {
+  margin: 25px auto 0px auto;
+}
+
+.hero-form .form-group:first-of-type {
+  margin: 0px auto 25px auto;
+}
+
+.hero-form input {
+  display: block;
+  font-size: 1em;
+  border: none;
+  background: transparent;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.hero-form input::-webkit-input-placeholder {
+  color: #444;
+  opacity: .2;
+}
+
+.hero-form input:-ms-input-placeholder {
+  color: #444;
+  opacity: .2;
+}
+
+.hero-form input::-ms-input-placeholder {
+  color: #444;
+  opacity: .2;
+}
+
+.hero-form input::placeholder {
+  color: #444;
+  opacity: .2;
+}
+
+.hero-form input + small,
+.hero-form input + p {
+  font-size: .8em;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.hero-form input.form-input {
+  width: 100%;
+  padding: 10px;
+  color: rgba(241, 133, 149, 0.5);
+  border-bottom: 2px solid rgba(241, 133, 149, 0.2);
+  margin: 0 auto;
+}
+
+.hero-form input.form-input:focus {
+  border-bottom: 2px solid #F18595;
+  color: rgba(241, 133, 149, 0.8);
+}
+
+.hero-form input[type="submit"], .hero-form input[type="button"] {
+  font-size: 1em;
+  padding: 7px 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  background-color: #F18595;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: white;
+  margin-top: 50px;
+  float: right;
+}
+
+.hero-form input[type="submit"].outline, .hero-form input[type="button"].outline {
+  color: #F18595;
+  background: none;
+  border-color: #F18595;
+}
+
+.hero-form input[type="submit"].outline:hover, .hero-form input[type="button"].outline:hover {
+  color: white;
+  background: #F18595;
+  border-color: transparent;
+}
+
+.hero-form input[type="submit"]:hover, .hero-form input[type="button"]:hover {
+  color: #F18595;
+  background: none;
+  border-color: #F18595;
+}
+
+.logout {
+  font-size: 1em;
+  padding: 7px 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  background-color: #444;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+}
+
+.logout.outline {
+  color: #444;
+  background: none;
+  border-color: #444;
+}
+
+.logout.outline:hover {
+  color: white;
+  background: #444;
+  border-color: transparent;
+}
+
+.logout:hover {
+  color: #444;
+  background: none;
+  border-color: #444;
+}
+
+.btn {
+  font-size: 1em;
+  padding: 7px 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  background-color: #E8F3F5;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: #C4ECF0;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+.btn.outline {
+  color: #E8F3F5;
+  background: none;
+  border-color: #E8F3F5;
+}
+
+.btn.outline:hover {
+  color: #C4ECF0;
+  background: #E8F3F5;
+  border-color: transparent;
+}
+
+.btn:hover {
+  color: #E8F3F5;
+  background: none;
+  border-color: #E8F3F5;
+}
+
+.btn:first-of-type {
+  margin-left: 0;
+}
+
+.btn::last-of-type {
+  margin-right: 0;
+}
+/*# sourceMappingURL=master.css.map */

@@ -1,0 +1,133 @@
+@import 'vars';
+@import 'mixins';
+
+// DOM
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #444;
+  background: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  @include link($theme-red);
+}
+
+.hero-container {
+  @include shape(100vw, 100vh, none);
+  
+  padding: 35px;
+
+  &.center {
+    @extend %center;
+  }
+
+  &.main {
+    background: url('/assets/bg-1.jpg') center no-repeat;
+    background-size: cover;
+  }
+
+  &.welcome-screen:first-of-type {
+    background: url('/assets/bg-4.jpg') $theme-cyan center no-repeat;
+    background-size: cover;
+  }
+
+  &.welcome-screen:not(:first-of-type) {
+    background: $theme-cyan;
+  }
+}
+
+.hero-form {
+  $tcolor: #444;
+  padding: 35px;
+  border-radius: 10px;
+  width: 80vw;
+  max-width: 450px;
+  background: rgba(#fff, .5);
+  color: $tcolor;
+  position: relative;
+  .form-group {
+    margin: 25px auto;
+  }
+  .form-group:last-of-type {
+    margin: 25px auto 0px auto;
+  }
+  .form-group:first-of-type {
+    margin: 0px auto 25px auto;
+  }
+  input {
+    display: block;
+    font-size: 1em;
+    border: none;
+    background: transparent;
+    transition: all 200ms ease-in-out;
+    &::placeholder {
+      color: $tcolor;
+      opacity: .2;
+    }
+    &+small,
+    &+p {
+      font-size: .8em;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+    &.form-input {
+      width: 100%;
+      padding: 10px;
+      color: rgba($theme-red, .5);
+      border-bottom: 2px solid rgba($theme-red, .2);
+      margin: 0 auto;
+      &:focus {
+        border-bottom: 2px solid $theme-red;
+        color: rgba($theme-red, .8)
+      }
+    }
+    &[type="submit"],
+    &[type="button"] {
+      @include btn($theme-red,
+      white,
+      600,
+      2px);
+      margin-top: 50px;
+      float: right;
+    }
+  }
+}
+
+
+
+.logout {
+  @include btn(#444, white, bold, 2px);
+  text-decoration: none;
+
+  position: fixed;
+  top: 25px;
+  right: 25px;
+}
+
+
+.btn {
+  @include btn($theme-light-cyan, $theme-cyan, 600, 2px);
+  text-decoration: none;
+
+  font-size: 1.5em;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &::last-of-type {
+    margin-right: 0;
+  }
+
+  display: inline-block;
+  margin: 0px 10px;
+}

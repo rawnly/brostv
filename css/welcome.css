@@ -1,0 +1,25 @@
+html {
+  overflow: hidden;
+}
+
+.welcome-content {
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.welcome-title {
+  margin: 0 auto;
+  padding: 15px;
+  font-size: 4.5rem;
+  color: white;
+}
+
+.welcome-buttons {
+  margin: 0a;
+  padding: 15px;
+  font-size: 1rem;
+  color: white;
+}
+/*# sourceMappingURL=welcome.css.map */

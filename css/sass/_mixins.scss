@@ -1,0 +1,59 @@
+@mixin btn($theme, $color, $weight: normal, $border: 1px) {
+  font-size: 1em;
+  padding: 7px 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: $weight;
+  transition: all 200ms ease-in-out;
+  background-color: $theme;
+  border: $border solid transparent;
+  border-radius: 5px;
+  color: $color;
+
+  &.outline {
+    color: $theme;
+    background: none;
+    border-color: $theme;
+
+    &:hover {
+      color: $color;
+      background: $theme;
+      border-color: transparent;
+    }
+  }
+
+  &:hover {
+    color: $theme;
+    background: none;
+    border-color: $theme;
+  }
+}
+
+@mixin shape($w, $h:$w, $bg: none) {
+  width: $w;
+  height: $h;
+  background: $bg;
+}
+
+@mixin link($theme) {
+  text-decoration: underline;
+  text-decoration-color: rgba($theme, .5);
+  letter-spacing: 1px;
+  font-size: 1em;
+  color: $theme;
+  transition: all 200ms ease-in-out;
+  &:hover {
+    color: darken($theme, 10%);
+  }
+}
+
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+%transition {
+  transition: all 200ms ease-in-out;
+}

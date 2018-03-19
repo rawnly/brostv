@@ -1,0 +1,126 @@
+@import 'vars';
+@import 'mixins';
+.hero-container {
+  background: $theme-cyan;
+  color: $theme-light-cyan;
+  &.center {
+    @extend %center;
+  }
+}
+
+.card-container {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 15px;
+  .card {
+    &.selected {
+      opacity: .5;
+      transform: scale(.95);
+      background: #444;
+      color: white;
+      &:hover {
+        opacity: .5;
+        transform: scale(.95);
+        background: #444;
+        color: white;
+      }
+    }
+    @extend %transition;
+    background: rgba(white, .5);
+    padding: 35px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #444;
+    cursor: pointer;
+    margin: 0px 25px;
+    display: inline-block;
+    &:hover {
+      transform: scale(.95);
+      background: rgba(white, .8);
+    }
+    &.taken {
+      background: rgba($theme-red, .8);
+      color: white;
+      &:hover {
+        transform: scale(.95);
+        background: rgba($theme-red, 1);
+      }
+    }
+  }
+}
+
+.btn {
+  @include btn($theme-light-cyan, $theme-red, 600, 2px);
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  display: none;
+  
+  &+label {
+    margin: 0 auto;
+    display: inline-block;
+  }
+  
+  &:checked+label {
+    background: $theme-light-cyan;
+    color: $theme-red;
+    border-color: transparent;
+  }
+
+  &:disabled+label {
+    cursor: not-allowed;
+    opacity: .3;
+    background: $theme-light-cyan;
+    color: $theme-red;
+    border-color: transparent;
+  }
+}
+
+.bottom-container {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px;
+  background: $theme-red;
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+  }
+  .bottom-title {
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    margin: 25px auto;
+    text-align: center;
+  }
+  form {
+    position: relative;
+    #fascie-orarie {
+      width: 450px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      .btn.fascia-oraria {
+        margin: 0 10px;
+        display: inline-block;
+      }
+    }
+    input[type="submit"] {
+      display: block;
+      margin: 25px auto;
+    }
+  }
+}
