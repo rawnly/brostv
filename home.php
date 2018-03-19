@@ -27,8 +27,8 @@
 	<title> Dashboard ::
 		<?php echo $user['first']; ?> </title>
 
-	<link rel="stylesheet" href="/css/master.css">
-	<link rel="stylesheet" href="/css/welcome.css">
+	<link rel="stylesheet" href="/brostv/css/master.css">
+	<link rel="stylesheet" href="/brostv/css/welcome.css">
 </head>
 
 <body id="top">
@@ -40,7 +40,7 @@
 				<?php echo $user['first']; ?> </p>
 			<div class="welcome-buttons">
 				<a href="#discover" class="btn outline">scopri</a>
-				<a href="/prenota.php" class="btn">prenota</a>
+				<a href="/brostv/prenota.php" class="btn">prenota</a>
 			</div>
 		</div>
 	</div>
@@ -53,11 +53,11 @@
 
 	<a href="/backend/session_destroy.php" class="logout">logout</a>
 
-	<script src="/js/axios.min.js"></script>
-	<script src="/js/jquery.min.js"></script>
+	<script src="/brostv/js/axios.min.js"></script>
+	<script src="/brostv/js/jquery.min.js"></script>
 
-	<script src="/js/index.js"></script>
-	<script src="/js/song.js"></script>
+	<script src="/brostv/js/index.js"></script>
+	<script src="/brostv/js/song.js"></script>
 </body>
 
 </html>

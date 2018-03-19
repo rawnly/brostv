@@ -13,14 +13,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<title> </title>
+	<title> BrosTV </title>
 
-	<link rel="stylesheet" href="/css/master.css">
+	<link rel="stylesheet" href="/brostv/css/master.css">
 </head>
 
 <body>
 	<div class="hero-container main center">
-		<form action="/backend/login_handler.php" method="POST" class="hero-form">
+		<form action="/brostv/backend/login_handler.php" method="POST" class="hero-form">
 			<?php if (isset($_GET['register'])): ?>
 
 			<input name="req-type" type="hidden" value="sign-up" />
@@ -53,7 +53,7 @@
 			<div class="form-group">
 				<input class="form-input" type="password" placeholder="Password" name="pass">
 				<p>Non sei ancora registrato?
-					<a href="/?register">Clicca qui!</a>
+					<a href="/brostv/?register">Clicca qui!</a>
 				</p>
 			</div>
 
@@ -64,10 +64,10 @@
 
 	</div>
 
-	<script src="/js/axios.min.js"></script>
-	<script src="/js/jquery.min.js"></script>
+	<script src="/brostv/axios.min.js"></script>
+	<script src="/brostv/jquery.min.js"></script>
 
-	<script src="/js/index.js"></script>
+	<script src="/brostv/index.js"></script>
 </body>
 
 </html>

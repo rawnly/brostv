@@ -30,8 +30,8 @@
 	<title> Dashboard ::
 		<?php echo $user['first']; ?> </title>
 
-	<link rel="stylesheet" href="/css/master.css">
-	<link rel="stylesheet" href="/css/prenota.css">
+	<link rel="stylesheet" href="/brostv/css/master.css">
+	<link rel="stylesheet" href="/brostv/css/prenota.css">
 </head>
 
 <body>
@@ -49,7 +49,7 @@
 		<div class="bottom-container">
 			<div class="close">&times;</div>
 			<h4 class="bottom-title">fascia oraria</h4>
-			<form action="/backend/prenotation_handler.php">
+			<form action="/brostv/backend/prenotation_handler.php">
 				<input type="hidden" name="day" value="1" id="dayid">
 
 				<div id="fascie-orarie">
@@ -65,14 +65,14 @@
 			</form>
 		</div>
 	</div>
-	<a href="/backend/session_destroy.php" class="logout">logout</a>
+	<a href="/brostv/backend/session_destroy.php" class="logout">logout</a>
 
-	<script src="/js/axios.min.js"></script>
-	<script src="/js/jquery.min.js"></script>
+	<script src="/brostv/js/axios.min.js"></script>
+	<script src="/brostv/js/jquery.min.js"></script>
 
-	<script src="/js/index.js"></script>
-	<script src="/js/song.js"></script>
-	<script src="/js/prenota.js"></script>
+	<script src="/brostv/js/index.js"></script>
+	<script src="/brostv/js/song.js"></script>
+	<script src="/brostv/js/prenota.js"></script>
 </body>
 
 </html>
